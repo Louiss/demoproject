@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 public class TestController {
     Logger logger = Logger.getLogger("TestController");
 
+
     @Autowired
     private TestService testService;
 
@@ -50,6 +51,7 @@ public class TestController {
     public TestDO get5(@PathVariable Integer id) {
         System.out.println("param:" + id);
         return testService.getById(id);
+
     }
 
     @RequestMapping(value = "/get6", method = RequestMethod.GET)
