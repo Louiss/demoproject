@@ -4,10 +4,9 @@ import com.lxc.study.entity.TestDO;
 import com.lxc.study.service.TestService;
 import com.lxc.study.service.TransactionalService;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
+import org.jboss.logging.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.logging.Logger;
 
 @RestController
 @RequestMapping("/demo")
